@@ -1,0 +1,30 @@
+# ===========================================================================
+#  Contoh daftar game custom untuk discord-badge-farm.ps1
+#  copyright by: jaune
+#
+#  Pakai dengan:
+#    powershell -NoProfile -ExecutionPolicy Bypass -File .\discord-badge-farm.ps1 -GamesFile .\games.example.txt
+#
+#  Aturan:
+#   - Satu game per baris. Hanya game di file ini yang akan difarm.
+#   - Format:  nama.exe | durasi | judul
+#     durasi & judul opsional. Durasi boleh: 30 / 45s / 2m / 1m30s.
+#     Kalau durasi tidak ditulis, dipakai -SecondsPerGame / -HoursPerGame.
+#   - Format lama juga jalan:  nama.exe = Judul
+#   - Baris berawalan '#' dan baris kosong diabaikan.
+#   - Nama .exe harus yang dikenali Discord agar tercatat (lihat -ListGames).
+#   - Copy file ini jadi games.txt, lalu edit sesuka Anda.
+# ===========================================================================
+
+# --- durasi sama untuk semua (tanpa kolom durasi) ---
+hl2p.exe
+portal2.exe
+Terraria.exe = Terraria
+
+# --- durasi khusus per game ---
+Stardew Valley.exe | 120
+Celeste.exe | 2m | Celeste
+hollow_knight.exe | 1m30s
+rimworldwin.exe | 3m | RimWorld
+Hades.exe | 90s | Hades
+Balatro.exe | 45
